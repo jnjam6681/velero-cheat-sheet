@@ -115,10 +115,10 @@ velero backup create nginx-backup --exclude-resources pods                      
 velero backup create nginx-backup --include-namespaces testing --include-resources pods, deployment     | Create a backup with specify namespaces and resources
 velero backup create nginx-backup --include-namespaces testing --exclude-resources pods                 | Create a backup with specify namespaces and exclude resources
 velero backup create nginx-backup --include-namespaces testing --ttl 2h                                 | Create a backup and set expire time
-velero backup describe nginx-backup | less                                                              | Describe a backup
+velero backup describe nginx-backup.                                                                    | Describe a backup
 velero restore get                                                                                      | Get all restore
 velero restore create nginx-backup-restore --from-backup nginx-backup                                   | Create a restore from backup
-velero restore describe nginx-backup-restore | less                                                     | Describe a restore
+velero restore describe nginx-backup-restore.                                                           | Describe a restore
 velero restore delete nginx-backup-restore                                                              | Delete a restore
 velero restore delete --all                                                                             | Delete a restore
 velero backup delete nginx-backup                                                                       | Delete a backup
