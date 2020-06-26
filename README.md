@@ -46,7 +46,6 @@ cat <<EOF>> minio.credentials
 aws_access_key_id=AKIAIOSFODNN7EXAMPLE
 aws_secret_access_key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 EOF
-`
 ```
 
 If you can't use kubectl.
